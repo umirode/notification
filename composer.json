@@ -1,5 +1,6 @@
 {
   "name": "umirode/notification",
+  "description": "PHP DDD Notification Interface",
   "authors": [
     {
       "name": "umirode",
