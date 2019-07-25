@@ -1,0 +1,26 @@
+{
+  "name": "umirode/notification",
+  "authors": [
+    {
+      "name": "umirode",
+      "email": "mr.droiderm@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Umirode\\Notification\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Umirode\\Notification\\Test\\": "test/",
+      "Umirode\\Notification\\Example\\": "example/"
+    }
+  }
+}
