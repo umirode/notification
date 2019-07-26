@@ -1,6 +1,9 @@
 {
   "name": "umirode/notification",
+  "homepage": "https://github.com/umirode/notification",
   "description": "PHP DDD Notification Interface",
+  "license": "MIT",
+  "type": "library",
   "authors": [
     {
       "name": "umirode",
