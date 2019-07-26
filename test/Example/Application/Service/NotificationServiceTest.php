@@ -23,12 +23,18 @@ final class NotificationServiceTest extends TestCase
 {
     public function testConstructorWithoutParameters(): void
     {
-        $this->assertIsObject(new NotificationService());
+        $notificationService = new NotificationService();
+
+        $this->assertIsObject($notificationService);
+        $this->assertInstanceOf(NotificationService::class, $notificationService);
     }
 
     public function testConstructorWithParameters(): void
     {
-        $this->assertIsObject(new NotificationService([new EmptyEmailTransport()]));
+        $notificationService = new NotificationService([new EmptyEmailTransport()]);
+
+        $this->assertIsObject($notificationService);
+        $this->assertInstanceOf(NotificationService::class, $notificationService);
     }
 
     public function testSendWithTransportInConstructor(): void
@@ -93,6 +99,4 @@ final class NotificationServiceTest extends TestCase
 
         $this->assertEmpty($service->addTransport(...$transports));
     }
-
-
 }
